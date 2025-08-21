@@ -1,0 +1,13 @@
+package com.leetcode2025;
+
+public class LeeCo136Sol {
+
+    public int singleNumber(int[] nums) {
+        int res = 0;
+        for (int i : nums){
+            res ^= i;
+        }
+        return res;
+
+    }
+}

@@ -1,13 +1,18 @@
 package com.leetcode2025;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.FutureTask;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class Main {
     public static void main(String[] args) {
-        LeeCo139Sol leeCo32Sol = new LeeCo139Sol();
-        leeCo32Sol.wordBreak("applecodeapple", Arrays.asList("apple", "code"));
 
+        String a = "daadad";
+        char[] charArray = a.toCharArray();
+        Arrays.sort(charArray);
+
+        System.out.println(Arrays.toString(charArray));
     }
 }
