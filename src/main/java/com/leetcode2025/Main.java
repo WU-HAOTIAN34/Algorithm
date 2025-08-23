@@ -13,6 +13,6 @@ public class Main {
         char[] charArray = a.toCharArray();
         Arrays.sort(charArray);
 
-        System.out.println(Arrays.toString(charArray));
+        System.out.println(Math.ceil(Math.log(7.0)/Math.log(2.0)));
     }
 }
