@@ -6,13 +6,20 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.FutureTask;
 import java.util.concurrent.locks.ReentrantLock;
 
+
 public class Main {
     public static void main(String[] args) {
 
-        String a = "daadad";
-        char[] charArray = a.toCharArray();
-        Arrays.sort(charArray);
+        LeeCo146Sol leeCo146Sol = new LeeCo146Sol();
+        LeeCo146Sol.LRUCache lruCache = leeCo146Sol.get(2);
+        LinkedHashMap<Integer, Integer> map = new LinkedHashMap<>(16, 0.75f, true);
+        map.put(1, 1);
+        map.put(2, 2);
+        map.put(3, 3);
+        map.get(1);
+        map.remove(map.lastEntry().getKey());
+        map.remove(map.firstEntry().getKey());
+        map.put(4, 4);
 
-        System.out.println(Math.ceil(Math.log(7.0)/Math.log(2.0)));
     }
 }
