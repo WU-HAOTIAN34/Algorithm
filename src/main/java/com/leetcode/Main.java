@@ -6,16 +6,9 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-        LeeCo146Sol leeCo146Sol = new LeeCo146Sol();
-        LeeCo146Sol.LRUCache lruCache = leeCo146Sol.get(2);
-        LinkedHashMap<Integer, Integer> map = new LinkedHashMap<>(16, 0.75f, true);
-        map.put(1, 1);
-        map.put(2, 2);
-        map.put(3, 3);
-        map.get(1);
-        map.remove(map.lastEntry().getKey());
-        map.remove(map.firstEntry().getKey());
-        map.put(4, 4);
+        ListNode listNode = new ListNode(-1, new ListNode(5, new ListNode(3, new ListNode(4, new ListNode(0)))));
+        LeeCo148Sol leeCo148Sol = new LeeCo148Sol();
+        leeCo148Sol.sortList(listNode);
 
     }
 }
