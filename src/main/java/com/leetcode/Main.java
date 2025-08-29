@@ -6,9 +6,9 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-        LeeCo283Sol leeCo283Sol = new LeeCo283Sol();
-        int[] nums = new int[]{1,0,0};
-        leeCo283Sol.moveZeroes(nums);
+        LeeCo240Sol leeCo240Sol = new LeeCo240Sol();
+        int[][] nums = new int[][]{{-1, 3}};
+        leeCo240Sol.searchMatrix(nums, 3);
         System.out.println(Arrays.toString(nums));
 
     }
