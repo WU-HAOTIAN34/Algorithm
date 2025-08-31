@@ -6,8 +6,7 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-        LeeCo76Sol leeCo76Sol = new LeeCo76Sol();
-        leeCo76Sol.minWindow("aaaaaaaaaaaabbbbbcdd", "abcdd");
+        new LeeCo207Sol().canFinish(3, new int[][]{{1,0}, {2,0}});
 
     }
 }

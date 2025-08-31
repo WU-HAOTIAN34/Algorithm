@@ -4,15 +4,16 @@ public class LeeCo33Sol {
 
     public int search(int[] nums, int target) {
         int l = 0;
-        int r = nums.length;
-        while(l<r){
-            int middle = (l+r)/2;
-            if(nums[middle]==target){
-                return middle;
-            }else if (nums[middle]>target && nums[l]<=target){
-                r = middle;
+        int r = nums.length-1;
+        while (l<=r){
+            int m = (l+r)/2;
+            if (nums[m]==target){
+                return m;
+            }else if ((nums[m]>target && nums[l]<=target) ||
+                    (nums[m]>target && nums[l]>nums[m]) || (nums[l]<=target && nums[l]>nums[m])){
+                r = m-1;
             }else{
-                l = middle+1;
+                l = m+1;
             }
         }
         return -1;
