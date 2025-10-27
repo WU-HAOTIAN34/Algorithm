@@ -15,6 +15,7 @@ public class Race {
             t.start();
         }
         try{
+
             cb.await();
             System.out.println("发令");
             cd.await();
